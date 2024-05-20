@@ -264,8 +264,7 @@ public class ScreenGame implements Screen {
         OrbitalStrikeReadySound = Gdx.audio.newSound(Gdx.files.internal("OrbitalStrikeReadySound.mp3"));
         OrbitalStrikeShootSound = Gdx.audio.newSound(Gdx.files.internal("OrbitalStrikeShootSound.mp3"));
 
-       // MusicForStages = Gdx.audio.newSound(Gdx.files.internal("MusicForGame.mp3"));
-        MusicForStages = Gdx.audio.newSound(Gdx.files.internal("ButtonClickSound.mp3"));
+        MusicForStages = Gdx.audio.newSound(Gdx.files.internal("MusicForGame.mp3"));
         MusicForBoss = Gdx.audio.newSound(Gdx.files.internal("MusicForBoss2.mp3"));
         MusicForLose = Gdx.audio.newSound(Gdx.files.internal("MusicForLose.mp3"));
         MusicForWin = Gdx.audio.newSound(Gdx.files.internal("MusicForWin.mp3"));
@@ -939,7 +938,7 @@ public class ScreenGame implements Screen {
         }
         if (!onPause) {
             if (Gdx.input.justTouched()) {
-               DamageDealtToEnemy(touch.x, touch.y, HEIGHT, WIDTH, 0, 666);
+              // DamageDealtToEnemy(touch.x, touch.y, HEIGHT, WIDTH, 0, 666);
             }
             //снаряды
             if (StickyTanks.TankType == 1) {
